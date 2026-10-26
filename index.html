@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Networking Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>My Portfolio</h1>
+            <p>Networking Student | Future Network Engineer</p>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Profile Section -->
+        <section class="card profile">
+            <div class="profile-icon">👨‍💻</div>
+            <h2>UDOY CHANDRA BHAKTO</h2>
+            <p>
+                Diploma in Computer Science and Technology Student
+            </p>
+            <p>
+                Learning Networking, MikroTik and Router Configuration.
+            </p>
+        </section>
+        <!-- Skills Section -->
+        <section class="card">
+            <h2>My Networking Skills</h2>
+            <div class="skills">
+                <span>MikroTik Configuration</span>
+                <span>IP Address Setup</span>
+                <span>Bandwidth Control</span>
+                <span>TP-Link Router Configuration</span>
+                <span>DHCP Server</span>
+                <span>Basic Networking</span>
+            </div>
+        </section>
+        <!-- Daily Work Diary -->
+        <section class="card">
+            <h2>My Daily Work Diary</h2>
+            <p class="description">
+                Record the networking tasks you complete every day.
+            </p>
+            <form id="taskForm">
+                <label for="taskDate">Work Date</label>
+                <input type="date" id="taskDate" required>
+                <label for="taskTitle">Task Name</label>
+                <input
+                    type="text"
+                    id="taskTitle"
+                    placeholder="Example: MikroTik Configuration"
+                    required
+                >
+                <label for="taskDetails">Work Details</label>
+                <textarea
+                    id="taskDetails"
+                    rows="4"
+                    placeholder="Describe what you did today..."
+                    required
+                ></textarea>
+                <label for="taskStatus">Task Status</label>
+                <select id="taskStatus">
+                    <option value="Completed">Completed</option>
+                    <option value="Learning">Learning</option>
+                    <option value="Practice">Practice</option>
+                </select>
+                <button type="submit">
+                    + Add Daily Work
+                </button>
+            </form>
+            <h3 class="history-title">My Work History</h3>
+            <div id="taskList"></div>
+            <p id="emptyMessage">
+                No tasks added yet.
+            </p>
+        </section>
+        <!-- Contact Section -->
+        <section class="card">
+            <h2>Contact 01608259950</h2>
+            <p>Email: your-bhaktoudoy111@.com</p>
+            <p>Location: Bangladesh</p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>My Networking Portfolio | Built by Me</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

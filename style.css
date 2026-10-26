@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+/* Header */
+.header {
+    background: linear-gradient(135deg, #0f172a, #0369a1);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+.header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+.header p {
+    margin: 0;
+    color: #dbeafe;
+}
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+/* Cards */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+.card h2 {
+    color: #075985;
+    margin-top: 0;
+}
+/* Profile */
+.profile {
+    text-align: center;
+}
+.profile-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.profile h2 {
+    margin-bottom: 5px;
+}
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills span {
+    background: #e0f2fe;
+    color: #075985;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+textarea {
+    resize: vertical;
+}
+/* Buttons */
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #0284c7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0369a1;
+}
+/* Work History */
+.history-title {
+    margin-top: 28px;
+}
+.task {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #0284c7;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 14px;
+    overflow-wrap: anywhere;
+}
+.task h3 {
+    margin-top: 0;
+}
+.task p {
+    white-space: pre-wrap;
+}
+.delete-btn {
+    background: #dc2626;
+    margin-top: 10px;
+}
+.delete-btn:hover {
+    background: #b91c1c;
+}
+#emptyMessage {
+    text-align: center;
+    color: #64748b;
+    padding: 15px;
+}
+.description {
+    color: #64748b;
+}
+/* Footer */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Mobile Design */
+@media (max-width: 600px) {
+    .header {
+        padding: 32px 15px;
+    }
+    .header h1 {
+        font-size: 26px;
+    }
+    .card {
+        padding: 18px;
+    }
+    .container {
+        margin: 18px auto;
+    }
+}
